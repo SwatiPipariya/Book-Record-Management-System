@@ -1,7 +1,16 @@
 const express = require("express");
-const { users } = require("./data/users.json")
+const dotenv = require("dotenv");
+
+const DbConnection = require("./databaseConnection")
+
+const userRouter = require("./Routes/Users");
+const booksRouter = require("./Routes/Books");
+
+dotenv.config();
 
 const app = express();
+
+DbConnection();
 
 const PORT = 8081;
 
@@ -29,6 +38,9 @@ app.get("/users", (req, res) => {
         data: users,
     });
 });
+
+app.use("/users", userRouter);
+app.use("/books", booksRouter);
 
 app.get("*", (req, res) => {
     res.status(404).json({

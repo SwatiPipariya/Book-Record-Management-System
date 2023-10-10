@@ -1,7 +1,7 @@
 {
   "name": "book_record_management_system",
   "version": "1.0.0",
-  "description": "Library System",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SwatiPipariya/book-record-management-system.git"
+    "url": "git+https://github.com/SwatiPipariya/Book-Record-Management-System"
   },
   "author": "Swati",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SwatiPipariya/book-record-management-system/issues"
+    "url": "https://github.com/SwatiPipariya/Book-Record-Management-System/issues"
   },
-  "homepage": "https://github.com/SwatiPipariya/book-record-management-system#readme",
+  "homepage": "https://github.com/SwatiPipariya/Book-Record-Management-System#readme",
   "devDependencies": {
     "nodemon": "^2.0.22"
   },
