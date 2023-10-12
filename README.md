@@ -1,4 +1,4 @@
-# J0123P3-Build
+# Book Record Management System
 
 Server  >> Storing certain book data
         >> User Register
@@ -51,12 +51,12 @@ missed by renewal && subscription date >> 150/-
 # Routes and Endpoints
 
 ## /users
-POST: Create a new user
-GET: Get all the user info here
+POST: Creating a new user
+GET: Get all the users
 
 ## /users/{id}
-GET: Get a user by id
-PUT: Update a user by their ID
+GET: Get user by id
+PUT: Updating a user by their ID
 DELETE: Delete a user by id (chk if he/she still have an issued book) && (is there any fine to paid)
 
 ## /users/subscription-details/{id}
@@ -85,3 +85,33 @@ GET: Get all issued books with their fine
 ## npm init
 ## npm i nodemon --save-dev
 ## npm run dev
+
+
+
+<!-- Jan 1 1970 UTC //MillSecs -->
+
+  new Date()
+Fri Mar 10 2023 21:20:41 GMT+0530 (India Standard Time)
+new Date("01/01/1999")
+Fri Jan 01 1999 00:00:00 GMT+0530 (India Standard Time)
+const date = new Date("01/01/1999");
+undefined
+date
+Fri Jan 01 1999 00:00:00 GMT+0530 (India Standard Time)
+Math.floor(date/1000*60*60*24);
+79067145600000
+Math.floor(date/(1000*60*60*24));
+10591
+let dateNew = new Date();
+undefined
+Math.floor(dateNew/(1000*60*60*24));
+19426
+
+
+
+MVC Arch => Controllers
+  >> M: Model (It depicts the structure of aMongoDb Collections)
+  >> V: View (wrt to frontend (reactJs))
+  >> C: Controllers (Brain or logical part of a route)
+        >> books.controllers.js
+        >> users.controllers.js

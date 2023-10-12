@@ -10,8 +10,6 @@ class IssuedBook{
     issuedDate;
     returnDate;
 
-
-
 // Whenever we create an object , the constructor gets invoked = Parameterised Contructor 
 constructor(user){
    this._id = user.issuedBook._id;
@@ -25,6 +23,5 @@ constructor(user){
 }
 }
 // var ref = new IssuedBook(userObj);
-
 
 module.exports = IssuedBook;
